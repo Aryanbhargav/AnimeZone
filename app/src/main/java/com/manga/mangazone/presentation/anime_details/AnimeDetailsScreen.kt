@@ -287,13 +287,11 @@ fun AnimeDetailsScreen(
 fun openUrlInChromeButton(context: Context, url: String) {
 
     val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url)).apply {
-        // Optional: specifically set Chrome as the browser
         setPackage("com.android.chrome")
     }
     try {
         context.startActivity(intent)
     } catch (e: ActivityNotFoundException) {
-        // Chrome is not installed, fall back to a generic browser
         val fallbackIntent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
         context.startActivity(fallbackIntent)
     }
