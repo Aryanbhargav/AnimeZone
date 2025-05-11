@@ -27,7 +27,7 @@
 AnimeZone follows **Clean Architecture** with the **MVVM** design pattern. The project is structured into three main layers:  
 
 1. **Data Layer**  
-   - Handles data operations from **Network (Retrofit)** and **Local Database (Room)**.  
+   - Handles data operations from **Network (Retrofit)** .  
 
 2. **Domain Layer**  
    - Contains repository implementations to abstract data sources.  
